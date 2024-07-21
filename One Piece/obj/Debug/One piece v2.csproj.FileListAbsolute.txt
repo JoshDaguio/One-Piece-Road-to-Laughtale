@@ -1,0 +1,12 @@
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\bin\Debug\One Piece.exe.config
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\bin\Debug\One Piece.exe
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\bin\Debug\One Piece.pdb
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One piece v2.csproj.AssemblyReference.cache
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One piece v2.csproj.SuggestedBindingRedirects.cache
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\Picture_Puzzle.Form1.resources
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One_Piece.Properties.Resources.resources
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One piece v2.csproj.GenerateResource.cache
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One piece v2.csproj.CoreCompileInputs.cache
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One Piece.exe
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One Piece.pdb
+D:\iskul\2nd-Year\Puzzle_Game_In_C_With_Source_Code\06- Picture Puzzle Game\Picture Puzzle\obj\Debug\One_Piece.Form1.resources

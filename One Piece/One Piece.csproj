@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DE4E67D-5A9E-4534-8303-6C54A897B38B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>One_Piece</RootNamespace>
+    <AssemblyName>One Piece</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caught.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caught.Designer.cs">
+      <DependentUpon>Caught.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitGame.Designer.cs">
+      <DependentUpon>ExitGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalDialogBox.Designer.cs">
+      <DependentUpon>FinalDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lose.Designer.cs">
+      <DependentUpon>Lose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoTime.Designer.cs">
+      <DependentUpon>NoTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrewIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrewIntro.Designer.cs">
+      <DependentUpon>CrewIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enemies.cs" />
+    <Compile Include="ExitMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitMsgBox.Designer.cs">
+      <DependentUpon>ExitMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetName.Designer.cs">
+      <DependentUpon>GetName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JoinCrew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoinCrew.Designer.cs">
+      <DependentUpon>JoinCrew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LorePt1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LorePt1.Designer.cs">
+      <DependentUpon>LorePt1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LorePt2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LorePt2.Designer.cs">
+      <DependentUpon>LorePt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LorePt3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LorePt3.Designer.cs">
+      <DependentUpon>LorePt3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LorePt4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LorePt4.Designer.cs">
+      <DependentUpon>LorePt4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poneglyph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poneglyph.Designer.cs">
+      <DependentUpon>Poneglyph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreFinal.Designer.cs">
+      <DependentUpon>PreFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuzzleRulesF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleRulesF.Designer.cs">
+      <DependentUpon>PuzzleRulesF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Retire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retire.Designer.cs">
+      <DependentUpon>Retire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesPone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesPone.Designer.cs">
+      <DependentUpon>RulesPone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShooterLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShooterLose.Designer.cs">
+      <DependentUpon>ShooterLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShooterLvlOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShooterLvlOne.Designer.cs">
+      <DependentUpon>ShooterLvlOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShooterLvlThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShooterLvlThree.Designer.cs">
+      <DependentUpon>ShooterLvlThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShooterLvlTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShooterLvlTwo.Designer.cs">
+      <DependentUpon>ShooterLvlTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMap.Designer.cs">
+      <DependentUpon>ShowMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShtrRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShtrRules.Designer.cs">
+      <DependentUpon>ShtrRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerLvl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerLvl2.Designer.cs">
+      <DependentUpon>TimerLvl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerLvl3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerLvl3.Designer.cs">
+      <DependentUpon>TimerLvl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win.Designer.cs">
+      <DependentUpon>Win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinMiniG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinMiniG.Designer.cs">
+      <DependentUpon>WinMiniG.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caught.resx">
+      <DependentUpon>Caught.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitGame.resx">
+      <DependentUpon>ExitGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalDialogBox.resx">
+      <DependentUpon>FinalDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lose.resx">
+      <DependentUpon>Lose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoTime.resx">
+      <DependentUpon>NoTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewIntro.resx">
+      <DependentUpon>CrewIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitMsgBox.resx">
+      <DependentUpon>ExitMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetName.resx">
+      <DependentUpon>GetName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JoinCrew.resx">
+      <DependentUpon>JoinCrew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LorePt1.resx">
+      <DependentUpon>LorePt1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LorePt2.resx">
+      <DependentUpon>LorePt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LorePt3.resx">
+      <DependentUpon>LorePt3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LorePt4.resx">
+      <DependentUpon>LorePt4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poneglyph.resx">
+      <DependentUpon>Poneglyph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreFinal.resx">
+      <DependentUpon>PreFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PuzzleRulesF.resx">
+      <DependentUpon>PuzzleRulesF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retire.resx">
+      <DependentUpon>Retire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesPone.resx">
+      <DependentUpon>RulesPone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShooterLose.resx">
+      <DependentUpon>ShooterLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShooterLvlOne.resx">
+      <DependentUpon>ShooterLvlOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShooterLvlThree.resx">
+      <DependentUpon>ShooterLvlThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShooterLvlTwo.resx">
+      <DependentUpon>ShooterLvlTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMap.resx">
+      <DependentUpon>ShowMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShtrRules.resx">
+      <DependentUpon>ShtrRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerLvl2.resx">
+      <DependentUpon>TimerLvl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerLvl3.resx">
+      <DependentUpon>TimerLvl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win.resx">
+      <DependentUpon>Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinMiniG.resx">
+      <DependentUpon>WinMiniG.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_orig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffy_r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate_clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e915594042f2e343d675c156d075b0f4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate_r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffy_square.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffy_sr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffy4th_r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cchest_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ochest_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate2_r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate3_r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\315523261_3298657833719379_2596595327706984165_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaga Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbtBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start Frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start reference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrtBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbtBtnH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtBtnH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrtBtnH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitBTNh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextBTNh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SkipBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SkipBTNh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitBTNm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puzzle TEST -2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartBTNm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesPuzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesPuzzleRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShufflBTNm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShuffleBTNhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartBTNhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartBTNm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VmapBTNhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VmapBTNm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PuzzleFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PuzzleFrameRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitBTNhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartBTNhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartBTNmh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H&amp;S Rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hearts and Stones Sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hearts and Stones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesPone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl1Ref.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl2Ref.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lvl3Ref.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pre-game for Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesShtr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesShtrRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer Lvl 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer Lvl 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb_cropped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transform_C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackbeard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear4th.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstory pt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstory pt 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstory pt 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%28GUIDE%29 Backstory final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstory final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfirmN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfirmNH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetNameRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Join Crew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Join CrewH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefuseJC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefuseJCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResetN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResetNH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First Sailing Lore introduce pt 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First Sailing Lore introduce pt 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First Sailing Lore introduce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore2 pt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore2 pt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore2 pt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LorePuzzle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LorePuzzle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResumeM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResumeMH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore3 pt6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LorePone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LorePone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueWL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueWLH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseFrameMiniG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseRetire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuDEH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoDEH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoRH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RetireWL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RetireWLH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinFrameMiniG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinRetire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesDEH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesRH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinFrameMG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapCompleted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapTImeOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartWL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartWLH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseFrameMG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoneLose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoneWin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore4 pt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore4 pt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lore4 pt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoreShtr pt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoreShtr pt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoreShtr pt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PostPoneLore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noEB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noEBH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yesEB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yesEBH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caught.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RanOutOfTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cntMB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cntMBH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restartMB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restartMBH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitFH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffyfinal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marshall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuFH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restartF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restartFH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbfinal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luffyf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoico.ico" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\backAH.png" />
+    <None Include="Resources\backA.png" />
+    <None Include="Resources\ShooterLose.png" />
+    <None Include="Resources\RUS.png" />
+    <None Include="Resources\rstSLH.png" />
+    <None Include="Resources\rstSL.png" />
+    <None Include="Resources\cntSLH.png" />
+    <None Include="Resources\cntSL.png" />
+    <None Include="Resources\ExitGame.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
